@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Consulta de Clima</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Consulta de Clima</h1>
+  
+  <div class="search">
+    <label for="ciudad">Ciudad:</label>
+    <input type="text" id="ciudad" placeholder="Ingresa una localidad" autofocus />
+    <button onclick="consultarClima()"> Buscar</button>
+  </div>
+  
+  <div class="searchs">
+    <label for="ciudades">Ciudades:</label>
+    <input type="text" id="ciudades" placeholder="Ingresa distintas ciudades" autofocus />
+    <button onclick="consultarClimas()">Buscar</button>
+  </div>
+  
+  <div>
+    <button onclick="limpiarTabla()">Limpiar Datos</button>
+  </div>
+
+  <br>
+  
+  <div>
+    <table id="tabla-clima">
+      <thead>
+        <tr>
+          <th>Ciudad</th>
+          <th>Temperatura</th>
+          <th>Descripción</th>
+          <th>icon</th>
+          <th>Humedad</th>
+          <th>viento</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
